@@ -80,6 +80,32 @@ Go back to the Cloud9 Terminal and provide the password you entered in the Trust
 
 The deployment is now completed! The trust verification takes about 10-15 minutes.
 
+## Launching Workspaces for corp.example.com users
+
+You can now create new user accounts in the corp.example Active Directory Domain and provision new workspaces. You can use Active Directory Users and Computers to create new users, or Powershell like this:
+
+Open the Powershell CLI in the domain controller EC2 instance and run the following command (change the Email Address to yours to receive the Workspaces invitation email):
+
+```
+New-ADUser -Name "Carlos Salazar" -GivenName "Carlos" -Surname "Salazar" -SamAccountName "csalazar" -AccountPassword(Read-Host -AsSecureString "Input Password") -Enabled $true -EmailAddress youremail@example.com
+```
+
+Open the [Workspaces Console](https://console.aws.amazon.com/workspaces/home) and click Launch Workspaces:
+
+![Launch Workspaces](img/launch-workspaces-1.png)
+
+Select aws-corp.example.com and click Next Step
+
+Select the corp.example.com Trust and click Show All Users
+
+![Select Trust](img/launch-workspaces-select-trust.png)
+
+Select the user you created before, click Add Select and Next Step
+
+![Add Selected](img/launch-workspaces-adduser.png)
+
+Select a bundle, click next and launch the Workspace.
+
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
