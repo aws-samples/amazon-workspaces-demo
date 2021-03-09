@@ -6,10 +6,10 @@ then
 fi
 echo "Cloning repo..."
 echo ""
-git clone https://github.com/[REPO]/aws-workspaces-demo.git
+git clone https://github.com/aws-samples/amazon-workspaces-demo.git
 echo "Changing directories to aws-workspaces-demo..."
 echo ""
-cd aws-workspaces-demo
+cd amazon-workspaces-demo
 echo "NPM update, install and build..."
 echo ""
 npm update
