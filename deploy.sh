@@ -7,7 +7,7 @@ fi
 echo "Cloning repo..."
 echo ""
 git clone https://github.com/aws-samples/amazon-workspaces-demo.git
-echo "Changing directories to aws-workspaces-demo..."
+echo "Changing directories to amazon-workspaces-demo..."
 echo ""
 cd amazon-workspaces-demo
 echo "NPM update, install and build..."
@@ -17,6 +17,7 @@ npm install
 npm run build
 echo "Deploy CDK Stack..."
 echo ""
+cdk bootstrap
 cdk deploy --outputs-file outputs.json
 echo "Reading CDK outputs..."
 echo ""
