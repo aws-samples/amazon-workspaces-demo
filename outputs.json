@@ -1,0 +1,10 @@
+{
+  "WorkspacesDemoStack": {
+    "directoryIP": "10.42.169.191",
+    "corpDCPublicIp": "99.79.56.214",
+    "corpDCSG": "sg-09b497893b77c0bbb",
+    "directoryId": "d-9d672d5aa9",
+    "directoryIP2": "10.42.229.208",
+    "corpDCPrivateIp": "10.42.43.46"
+  }
+}
