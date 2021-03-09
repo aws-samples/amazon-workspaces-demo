@@ -32,9 +32,9 @@ After the resources are created, you will need to provide your public IP address
 
 To create the trust from your corp.example.com to the aws-corp.example AWS Managed Directory download the RDP file from the EC2 console as instructed and login to the EC2 Domain Controller as Administrator with the secure password provided in the terminal. (You can also retrieve the password from Secrets Manager).
 
-From the Windows Domain Controller, open Powershell CLI and create the DNS Conditional Forwarders with the command provided in the terminal:
+From the Windows Domain Controller, open Powershell CLI and create the DNS Conditional Forwarders with the command provided in the terminal, for example:
 ```
-Add-DnsServerConditionalForwarderZone -Name aws-corp.example.com -MasterServers 10.42.147.13,10.42.209.231 -ReplicationScope Forest
+Add-DnsServerConditionalForwarderZone -Name aws-corp.example.com -MasterServers x.x.x.x,x.x.x.x -ReplicationScope Forest
 ```
 ![Conditional Forwarders](img/create-conditional-forwarders.png)
 
