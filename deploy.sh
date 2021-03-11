@@ -14,7 +14,7 @@ echo "NPM update, install and build..."
 echo ""
 npm update
 npm install
-npm oudated
+npm outdated
 npm update
 npm run build
 echo "Deploy CDK Stack..."
