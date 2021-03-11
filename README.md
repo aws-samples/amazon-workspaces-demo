@@ -16,6 +16,11 @@ Deploy Time: 20-40 minutes.
 ## Architecture
 
 ![Architecture](img/architecture-2.png)
+
+## Estimated Cost
+
+[AWS Directory Service](https://aws.amazon.com/directoryservice/limited-free-trial/) and [Amazon Workspaces](https://aws.amazon.com/workspaces/pricing/) include a limited free trial period, The estimated cost for running this environment after the free tier expires in us-east-1 is $0.505 per hour, this includes the Managed Active Directory hourly charge, EC2 Instance, and NAT Gateway. The Amazon WorkSpaces Free Tier provides two Standard bundle WorkSpaces, for details visit the [Amazon Workspaces Pricing Page](https://aws.amazon.com/workspaces/pricing/).
+
 ## Getting Started
 
 We recommend deploying this demo environment to the closest AWS Region where Workspaces is available, the latest list can be found [here](https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.html).
