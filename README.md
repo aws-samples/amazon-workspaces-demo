@@ -1,5 +1,13 @@
 # Amazon Workspaces Demo
 
+## About
+
+This guide helps you build an Amazon Workspaces demo environment, including the deployment and configuration of a new Active Directory Domain Forest (corp.example.com) with a two-way trust to an AWS Managed AD Directory.
+
+After the environment is deployed to your AWS Account, you will be able to launch new Amazon Workspaces for users in the corp.example.com domain.
+
+Deploy Time: 20-40 minutes.
+
 ## Requirements
 
 * AWS Account
