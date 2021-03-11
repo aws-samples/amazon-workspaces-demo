@@ -15,7 +15,7 @@ Deploy Time: 20-40 minutes.
 
 ## Architecture
 
-![Architecture](img/architecture.svg)
+![Architecture](img/architecture-2.png)
 ## Getting Started
 
 We recommend deploying this demo environment to the closest AWS Region where Workspaces is available, the latest list can be found [here](https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.html).
