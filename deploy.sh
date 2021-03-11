@@ -12,6 +12,7 @@ echo ""
 cd amazon-workspaces-demo
 echo "NPM update, install and build..."
 echo ""
+npm install -g aws-cdk --force
 npm update
 npm install
 npm outdated
