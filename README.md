@@ -43,9 +43,9 @@ The AWS::DirectoryService::MicrosoftAD deployment will take 30-40 minutes, **DO 
 
 After the resources are created, you will need to provide your public IP address for the script to add a Security Group Rule for RDP access. You can view your current IP address from [https://checkip.amazonaws.com/](https://checkip.amazonaws.com/).
 
-To create the trust from your corp.example.com to the aws-corp.example AWS Managed Directory download the RDP file from the EC2 console as instructed and login to the EC2 Domain Controller as Administrator with the secure password provided in the terminal. (You can also retrieve the password from Secrets Manager).
+To create the trust from corp.example.com (simulated on-premises domain) to aws-corp.example AWS Managed Directory, download the RDP file from the EC2 console as instructed and using your [RDP Client](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients), login to the EC2 Domain Controller as Administrator with the secure password provided in the terminal (Also available from the AWS Secrets Manager Console).
 
-From the Windows Domain Controller, open Powershell CLI and create the DNS Conditional Forwarders with the command provided in the terminal, for example:
+From the Windows Domain Controller session, open Powershell CLI and create the DNS Conditional Forwarders with the command provided in the terminal, for example:
 ```
 Add-DnsServerConditionalForwarderZone -Name aws-corp.example.com -MasterServers x.x.x.x,x.x.x.x -ReplicationScope Forest
 ```
