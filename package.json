@@ -1,6 +1,6 @@
 {
   "name": "workspaces-demo",
-  "version": "0.1.0",
+  "version": "0.5",
   "bin": {
     "workspaces-demo": "bin/workspaces-demo.js"
   },
@@ -27,6 +27,7 @@
     "@aws-cdk/aws-secretsmanager": "^1.91.0",
     "@aws-cdk/aws-workspaces": "^1.91.0",
     "@aws-cdk/core": "^1.91.0",
-    "source-map-support": "^0.5.16"
+    "source-map-support": "^0.5.16",
+    "ws": "^7.4.6"
   }
 }
